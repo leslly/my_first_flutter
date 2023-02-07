@@ -15,16 +15,28 @@ class _HomeState extends State<Home> {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(top: 50, left: 20),
+            margin: EdgeInsets.only(top: 45,bottom: 15),
+            padding: EdgeInsets.only(left: 20, right: 20),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("milo and milk", textAlign: TextAlign.center, ),
-                Row(
+                Column(
                   children: [
-                    Text("LESLIE"),
+                    Text("milo and milk", textAlign: TextAlign.center, ),
+                    Row(
+                      children: [
+                        Text("LESLIE"),
 
+                      ],
+                    )
                   ],
-                )
+                ),
+               Center(
+                 child: Container(
+                   width: 100,
+                   height: 200,
+                 ),
+               ),
               ],
 
             ),
