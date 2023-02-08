@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/login_view.dart';
+import 'package:get/route_manager.dart';
 
 class splashView extends StatelessWidget {
   const splashView({Key? key}) : super(key: key);

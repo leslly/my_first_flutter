@@ -35,6 +35,11 @@ class _HomeState extends State<Home> {
                  child: Container(
                    width: 100,
                    height: 200,
+                   child: Icon(Icons.home_filled, color: Colors.red,),
+                   decoration: BoxDecoration(
+                     shape: BoxShape.circle,
+                     borderRadius: BorderRadius.circular(12),
+                   ),
                  ),
                ),
               ],
@@ -45,12 +50,5 @@ class _HomeState extends State<Home> {
         ],
       ),
     );
-    /*Container(
-      child: Column(
-        children: const [
-          Text("bread and butter cause obesity", maxLines: 8 ,),
-        ],
-      ),
-    );*/
   }
 }
