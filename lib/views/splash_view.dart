@@ -11,8 +11,8 @@ class splashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 2), () {
-      Get.to(const LoginView());
-      //// ERROR, GET keyword not recognised
+      Get.to(LoginView());
+      //// ERROR, GET keyword not recognised ~> solved by import
     });
     return Scaffold(
       backgroundColor: GlobalColor.mainColor,
