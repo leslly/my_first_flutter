@@ -18,6 +18,15 @@ class SocialLogins extends StatelessWidget {
             )
         ),
       ),
+        const SizedBox(height: 15),
+        Row(
+          children: [
+            Container(
+              alignment: Alignment.center,
+              child: Svg,
+            ),
+          ],
+        ),
       ],
 
     );
