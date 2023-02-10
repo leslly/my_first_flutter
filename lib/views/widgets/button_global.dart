@@ -10,6 +10,8 @@ class ButtonGlobal extends StatelessWidget {
     return InkWell(
       onTap: () {
         print('Login');
+        // According to video, ' this ' keyword is added when you hover
+        // over print but i get something different
       },
       child: Container(
         alignment: Alignment.center,

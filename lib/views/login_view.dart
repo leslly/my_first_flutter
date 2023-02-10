@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/widgets/button_global.dart';
+import 'package:my_first_flutter/views/widgets/social_login.dart';
 import 'package:my_first_flutter/views/widgets/text_form_global.dart';
 
 class LoginView extends StatelessWidget {
@@ -35,6 +36,7 @@ class LoginView extends StatelessWidget {
                   'Login to your account',
                   style: TextStyle(
                     fontSize: 20,
+                    fontFamily: "Roboto",
                     fontWeight: FontWeight.bold,
                     color: GlobalColor.textColor,
                   ),
@@ -58,9 +60,10 @@ class LoginView extends StatelessWidget {
                 ),
                 ////password Input End
                 const SizedBox(height: 50),
-
                 //Button
                 const ButtonGlobal(),
+                const SizedBox(height: 20),
+                SocialLogins(),
               ],
             ),
           ),
