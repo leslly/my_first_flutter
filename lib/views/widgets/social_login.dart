@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 
 class SocialLogins extends StatelessWidget {
@@ -7,28 +8,38 @@ class SocialLogins extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [ Container(
-        alignment: Alignment.center,
-        child: Text(
-            'Or sign in with',
-            style: TextStyle(
-              color: GlobalColor.textColor,
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            )
+      children: [
+        Container(
+          alignment: Alignment.center,
+          child: Text('Or sign in with',
+              style: TextStyle(
+                color: GlobalColor.textColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              )),
         ),
-      ),
         const SizedBox(height: 15),
         Row(
           children: [
             Container(
               alignment: Alignment.center,
-              child: Svg,
+              child: Icon(
+                Icons.home_filled,
+              ),
+              color: Colors.red,
             ),
+            Column(
+              children: [
+                Container(
+                  alignment: Alignment.topLeft,
+                  color: Colors.black,
+                  child: Text("Testing", maxLines: 10),
+                )
+              ],
+            )
           ],
         ),
       ],
-
     );
   }
 }
