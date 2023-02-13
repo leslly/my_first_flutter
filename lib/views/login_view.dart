@@ -10,8 +10,9 @@ class LoginView extends StatelessWidget {
    final TextEditingController passwordController = TextEditingController();
 //widget = container = child = children[]
   @override
-  Widget build(BuildContext context) { // there is only one widget that hlds everything
-    return Scaffold( // is a class/widget that contains all the actions of an activityh
+  Widget build(BuildContext context) { // there is only one widget that holds everything
+    return Scaffold( // is a class/widget that contains all the actions of an widget
+      //expanded widget ~ children inder the parent will take evy available in the parent widget
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -22,13 +23,36 @@ class LoginView extends StatelessWidget {
                 const SizedBox(height: 20),
                 Container( // container for the logo
                   alignment: Alignment.center,
-                  child: Text(
-                      'cellSolution',
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'c',
+                        style: TextStyle(
+                          color: GlobalColor.textColor,
+                          fontSize: 50,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      InkWell(
+                        child: Text(
+                          'e',
                           style: TextStyle(
-                            color: GlobalColor.textColor,
-                            fontWeight: FontWeight.bold,
+                            color: GlobalColor.letterColor,
                             fontSize: 50,
+                            fontWeight: FontWeight.bold,
                           ),
+                        ),
+                      ),
+                      Text(
+                        'llSolution',
+                        style: TextStyle(
+                          color: GlobalColor.textColor,
+                          fontSize: 50,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 const SizedBox(height: 50),
@@ -74,6 +98,7 @@ class LoginView extends StatelessWidget {
         color: Colors.white,
         alignment: Alignment.center, // the text is not centered
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Don't have an account ?",

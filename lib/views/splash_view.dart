@@ -18,6 +18,7 @@ class splashView extends StatelessWidget {
       backgroundColor: GlobalColor.mainColor,
       body:  Center(// the text is not centered
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'c',
