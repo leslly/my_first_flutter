@@ -16,16 +16,63 @@ class splashView extends StatelessWidget {
     });
     return Scaffold(
       backgroundColor: GlobalColor.mainColor,
-      body: const Center(
-        child: Text(
+      body:  Center(// the text is not centered
+        child: Row(
+          children: [
+            Text(
+              'c',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 50,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            InkWell(
+              child: Text(
+                'e',
+                style: TextStyle(
+                  color: GlobalColor.letterColor,
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Text(
+              'llSolution',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 50,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+        ),
+      );
+  }
+}
+/*
+* hild: Row(
+          children: [
+            Text(
+              "Don't have an account ?",
+            ),
+            InkWell(
+              child: Text(
+                'Sign Up',
+                  style: TextStyle(
+                    color: GlobalColor.mainColor,
+                    fontSize: 16,
+                  ),
+              ),
+            ),
+          ],
+        ),
+        * Text(
             'cellSolution',
         style: TextStyle(
             color: Colors.white,
           fontSize: 50,
           fontWeight: FontWeight.bold,
         ),
-      ),
-        ),
-      );
-  }
-}
+      ),*/

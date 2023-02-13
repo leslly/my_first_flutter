@@ -69,6 +69,27 @@ class LoginView extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: Container( // I don't know why the text was put in a navigation bar
+        height: 50,
+        color: Colors.white,
+        alignment: Alignment.center, // the text is not centered
+        child: Row(
+          children: [
+            Text(
+              "Don't have an account ?",
+            ),
+            InkWell(
+              child: Text(
+                'Sign Up',
+                  style: TextStyle(
+                    color: GlobalColor.mainColor,
+                    fontSize: 16,
+                  ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
