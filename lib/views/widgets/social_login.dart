@@ -14,29 +14,75 @@ class SocialLogins extends StatelessWidget {
           child: Text('Or sign in with',
               style: TextStyle(
                 color: GlobalColor.textColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
+                fontSize: 18,
               )),
         ),
         const SizedBox(height: 15),
         Row(
           children: [
-            Container(
-              alignment: Alignment.center,
-              child: Icon(
-                Icons.home_filled,
+            /////Google
+            Expanded(
+              child: Container(
+                alignment: Alignment.center,
+                height: 55,
+                decoration: BoxDecoration(
+                  color: GlobalColor.bodyColor,
+                  borderRadius: BorderRadius.circular(6),
+                  boxShadow:[
+                    BoxShadow(
+                    color: Colors.black,
+                    blurRadius: 10,
+                   ),
+                  ],
+                ),
+                child: SvgPicture.asset(
+                  'assets/image/icons8-google.svg',
+                  height: 30,
+                ),
               ),
-              color: Colors.red,
             ),
-            Column(
-              children: [
-                Container(
-                  alignment: Alignment.topLeft,
-                  color: Colors.black,
-                  child: Text("Testing", maxLines: 10),
-                )
-              ],
-            )
+            /////GitHub
+            Expanded(
+              child: Container(
+                alignment: Alignment.center,
+                height: 55,
+                decoration: BoxDecoration(
+                  color: GlobalColor.bodyColor,
+                  borderRadius: BorderRadius.circular(6),
+                  boxShadow:[
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 10,
+                    ),
+                  ],
+                ),
+                child: SvgPicture.asset(
+                  'assets/image/icons8-github.svg',
+                  height: 30,
+                ),
+              ),
+            ),
+            /////LinkedIn
+            Expanded(
+              child: Container(
+                alignment: Alignment.center,
+                height: 55,
+                decoration: BoxDecoration(
+                  color: GlobalColor.bodyColor,
+                  borderRadius: BorderRadius.circular(6),
+                  boxShadow:[
+                    BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 10,
+                    ),
+                  ],
+                ),
+                child: SvgPicture.asset(
+                  'assets/image/icons8-linkedin.svg',
+                  height: 30,
+                ),
+              ),
+            ),
           ],
         ),
       ],

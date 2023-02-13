@@ -1,54 +1,54 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/utils/global_colours.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.only(top: 45,bottom: 15),
-            padding: EdgeInsets.only(left: 20, right: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Column(
-                  children: [
-                    Text("milo and milk", textAlign: TextAlign.center, ),
-                    Row(
-                      children: [
-                        Text("LESLIE"),
-
-                      ],
-                    )
-                  ],
+                const SizedBox(height: 20),
+                Container(
+                  alignment: Alignment.topLeft,
+                  child: Text(
+                    'Welcome User',
+                    style: TextStyle(
+                      color: GlobalColor.textColor,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-               Center(
-                 child: Container(
-                   width: 100,
-                   height: 200,
-                   child: Icon(Icons.home_filled, color: Colors.red,),
-                   decoration: BoxDecoration(
-                     shape: BoxShape.circle,
-                     borderRadius: BorderRadius.circular(12),
-                   ),
-                 ),
-               ),
+                const SizedBox(height: 10),
+                // Container with curved edges
+                Container(
+                  color: GlobalColor.mainColor,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: Text(
+                    "Let's build your career map",
+                    style: TextStyle(
+                      color: GlobalColor.bodyColor,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                )
               ],
-
             ),
-
           ),
-        ],
+        ),
       ),
-    );
+      );
+
   }
 }

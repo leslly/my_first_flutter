@@ -9,7 +9,7 @@ class ButtonGlobal extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        print('Login');
+        print('Logged in');
         // According to video, ' this ' keyword is added when you hover
         // over print but i get something different
       },
