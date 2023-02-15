@@ -13,12 +13,12 @@ class SocialLogins extends StatelessWidget {
           alignment: Alignment.center,
           child: Text('Or sign in with',
               style: TextStyle(
-                color: GlobalColor.textColor,
+                color: GlobalColor.black,
                 fontSize: 18,
               )),
         ),
         const SizedBox(height: 15),
-        Container(
+        SizedBox(
           width: MediaQuery.of(context).size.width * 0.8,
           child: Row(
             children: [
@@ -28,9 +28,9 @@ class SocialLogins extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: GlobalColor.bodyColor,
+                    color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow:[
+                    boxShadow:const [
                       BoxShadow(
                       color: Colors.black,
                       blurRadius: 10,
@@ -50,9 +50,9 @@ class SocialLogins extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: GlobalColor.bodyColor,
+                    color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow:[
+                    boxShadow:const [
                       BoxShadow(
                         color: Colors.black,
                         blurRadius: 10,
@@ -72,9 +72,9 @@ class SocialLogins extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: GlobalColor.bodyColor,
+                    color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow:[
+                    boxShadow:const [
                       BoxShadow(
                         color: Colors.black,
                         blurRadius: 10,

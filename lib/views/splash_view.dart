@@ -15,7 +15,7 @@ class splashView extends StatelessWidget {
       //// ERROR, GET keyword not recognised ~> solved by import
     });
     return Scaffold(
-      backgroundColor: GlobalColor.mainColor,
+      backgroundColor: GlobalColor.blue,
       body:  Center(// the text is not centered
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -32,7 +32,7 @@ class splashView extends StatelessWidget {
               child: Text(
                 'e',
                 style: TextStyle(
-                  color: GlobalColor.letterColor,
+                  color: GlobalColor.red,
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                 ),

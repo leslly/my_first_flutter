@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
+import 'package:my_first_flutter/views/widgets/dream_global_button.dart';
+import 'package:my_first_flutter/views/widgets/no_dream_global_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,6 +10,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -21,7 +26,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'Welcome User',
                     style: TextStyle(
-                      color: GlobalColor.textColor,
+                      color: GlobalColor.black,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -30,18 +35,21 @@ class HomePage extends StatelessWidget {
                 const SizedBox(height: 10),
                 // Container with curved edges
                 Container(
-                  color: GlobalColor.mainColor,
+                  color: GlobalColor.blue,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: Text(
                     "Let's build your career map",
                     style: TextStyle(
-                      color: GlobalColor.bodyColor,
-                      fontSize: 24,
+                      color: GlobalColor.white,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                 // NoDreamButton(),
+                 // DreamGlobalButton(),
+
                 )
               ],
             ),

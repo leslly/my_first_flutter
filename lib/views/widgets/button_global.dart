@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
+import 'package:my_first_flutter/home/home_page.dart';
 
 
 class ButtonGlobal extends StatelessWidget {
@@ -9,7 +10,7 @@ class ButtonGlobal extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        print('Logged in');
+        Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
         // According to video, ' this ' keyword is added when you hover
         // over print but i get something different
       },
@@ -17,7 +18,7 @@ class ButtonGlobal extends StatelessWidget {
         alignment: Alignment.center,
         height: 55,
         decoration: BoxDecoration(
-            color: GlobalColor.mainColor,
+            color: GlobalColor.blue,
             borderRadius: BorderRadius.circular(6),
             boxShadow: [
               BoxShadow(

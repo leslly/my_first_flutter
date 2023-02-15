@@ -29,7 +29,7 @@ class LoginView extends StatelessWidget {
                       Text(
                         'c',
                         style: TextStyle(
-                          color: GlobalColor.textColor,
+                          color: GlobalColor.black,
                           fontSize: 50,
                           fontWeight: FontWeight.bold,
                         ),
@@ -38,7 +38,7 @@ class LoginView extends StatelessWidget {
                         child: Text(
                           'e',
                           style: TextStyle(
-                            color: GlobalColor.letterColor,
+                            color: GlobalColor.red,
                             fontSize: 50,
                             fontWeight: FontWeight.bold,
                           ),
@@ -47,7 +47,7 @@ class LoginView extends StatelessWidget {
                       Text(
                         'llSolution',
                         style: TextStyle(
-                          color: GlobalColor.textColor,
+                          color: GlobalColor.black,
                           fontSize: 50,
                           fontWeight: FontWeight.bold,
                         ),
@@ -62,7 +62,7 @@ class LoginView extends StatelessWidget {
                     fontSize: 20,
                     fontFamily: "Roboto",
                     fontWeight: FontWeight.bold,
-                    color: GlobalColor.textColor,
+                    color: GlobalColor.black,
                   ),
                 ),
                 const SizedBox(height: 15), //Are the logo,text and textfield seperated by the siwed box
@@ -107,7 +107,7 @@ class LoginView extends StatelessWidget {
               child: Text(
                 'Sign Up',
                   style: TextStyle(
-                    color: GlobalColor.mainColor,
+                    color: GlobalColor.blue,
                     fontSize: 16,
                   ),
               ),
