@@ -47,8 +47,8 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                 // NoDreamButton(),
-                 // DreamGlobalButton(),
+                  NoDreamButton(),
+                  DreamGlobalButton(),
 
                 )
               ],
