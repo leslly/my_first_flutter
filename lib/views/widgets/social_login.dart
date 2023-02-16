@@ -38,7 +38,7 @@ class SocialLogins extends StatelessWidget {
                     ],
                   ),
                   child: SvgPicture.asset(
-                    'assets/image/icons8-google.svg',
+                    'assets/images/icons8-google.svg',
                     height: 30,
                   ),
                 ),
@@ -60,7 +60,7 @@ class SocialLogins extends StatelessWidget {
                     ],
                   ),
                   child: SvgPicture.asset(
-                    'assets/image/icons8-github.svg',
+                    'assets/images/icons8-github.svg',
                     height: 30,
                   ),
                 ),
@@ -82,7 +82,7 @@ class SocialLogins extends StatelessWidget {
                     ],
                   ),
                   child: SvgPicture.asset(
-                    'assets/image/icons8-linkedin.svg',
+                    'assets/images/icons8-linkedin-circled.svg',
                     height: 20,
                   ),
                 ),
