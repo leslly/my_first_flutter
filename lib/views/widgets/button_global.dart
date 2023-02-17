@@ -3,6 +3,8 @@ import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/home/home_page.dart';
 import 'package:my_first_flutter/views/widgets/dream_global_button.dart';
 
+import 'dream_global/dream_global_bg.dart';
+
 
 class ButtonGlobal extends StatelessWidget {
   const ButtonGlobal({Key? key}) : super(key: key);
@@ -12,7 +14,7 @@ class ButtonGlobal extends StatelessWidget {
     return Container(
       child: InkWell(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => DreamGlobalButton()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => DreamGlobalBg()));
           // According to video, ' this ' keyword is added when you hover
           // over print but i get something different
         },

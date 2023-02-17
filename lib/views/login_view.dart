@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/widgets/button_global.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/dream_global_bg.dart';
 import 'package:my_first_flutter/views/widgets/social_login.dart';
 import 'package:my_first_flutter/views/widgets/text_form_global.dart';
 

@@ -14,7 +14,7 @@ class DreamGlobalButton extends StatelessWidget {
       decoration: BoxDecoration(
         color: GlobalColor.white,
         borderRadius: BorderRadius.circular(10),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 9,
           ),
@@ -25,7 +25,7 @@ class DreamGlobalButton extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: const [
               Text(
                 "i will come  to the house later this evening daughter, And tell your mother about it",
                 maxLines: 2,
