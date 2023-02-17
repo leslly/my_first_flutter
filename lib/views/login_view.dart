@@ -17,7 +17,7 @@ class LoginView extends StatelessWidget {
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(15.0),
-            child: Column(// the logo and textfield are inside the same column to aid alignment
+            child: Column(// the logo and text field are inside the same column to aid alignment
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [//inside the column
                 const SizedBox(height: 20),

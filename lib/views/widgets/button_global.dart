@@ -12,7 +12,7 @@ class ButtonGlobal extends StatelessWidget {
     return Container(
       child: InkWell(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => DreamGlobalButton()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
           // According to video, ' this ' keyword is added when you hover
           // over print but i get something different
         },

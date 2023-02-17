@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/category_view.dart';
 
 class CategoryOneButton extends StatelessWidget {
@@ -12,10 +13,12 @@ class CategoryOneButton extends StatelessWidget {
         Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryView()));
       },
       child: Container(
-        alignment: Alignment.center,
-        height: 55,
+        alignment: Alignment.bottomCenter,
+        height: 45,
+        width: 352,
         decoration: BoxDecoration(
-          color: Colors.red,
+          borderRadius: BorderRadius.circular(30),
+          color: GlobalColor.blackTwo,
           boxShadow: [
             BoxShadow(
               color: Colors.black.withOpacity(0.1),
@@ -24,11 +27,11 @@ class CategoryOneButton extends StatelessWidget {
           ],
         ),
         child: const Text(
-          'Next page',
+          'Next',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            fontWeight: FontWeight.normal,
           ),
         ),
       ),
