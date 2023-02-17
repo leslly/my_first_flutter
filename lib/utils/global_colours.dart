@@ -8,6 +8,8 @@ class GlobalColor {
   static HexColor black = HexColor('#000000');//black
   static HexColor red = HexColor('DE1212');//red
   static HexColor white = HexColor('FFFFFF');//white
+  static HexColor gray = HexColor('79747E');//gray
+  static HexColor blackTwo = HexColor('16131A');//next button
 
   //static final Color textColor = const Color(0xff25d366);
 }
