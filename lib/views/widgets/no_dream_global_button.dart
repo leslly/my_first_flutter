@@ -36,6 +36,7 @@ class NoDreamButton extends StatelessWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
+                    fontFamily: 'Reem',
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     height: 1.2,
@@ -50,6 +51,7 @@ class NoDreamButton extends StatelessWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
+                    fontFamily: 'Reem',
                     fontWeight: FontWeight.normal,
                     fontSize: 16,
                     height: 1.2,
@@ -64,6 +66,7 @@ class NoDreamButton extends StatelessWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
+                    fontFamily: 'Reem',
                     fontWeight: FontWeight.normal,
                     color: Colors.black54,
                     fontSize: 16,

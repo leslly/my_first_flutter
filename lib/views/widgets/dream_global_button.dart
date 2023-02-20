@@ -27,35 +27,39 @@ class DreamGlobalButton extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               Text(
-                "i will come  to the house later this evening daughter, And tell your mother about it",
+                "I have a dream role in mind!",
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 20,
                   height: 1.2,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Reem',
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
               Text(
-                "i will come  to the house later this evening leslie, And tell your mother about it",
+                "Fill in some basic information and sit back relax.",
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 16,
                   height: 1.2,
+                  fontFamily: 'Reem',
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
               Text(
-                "i will come  to the house later this evening son, And tell your mother about it",
+                "AI Generated - 3 simple steps",
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
-                  fontSize: 12,
+                  fontFamily: 'Reem',
+                  fontSize: 16,
                   height: 1.2,
                 ),
               ),

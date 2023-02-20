@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../dream_global_button.dart';
+import '../no_dream_global_button.dart';
 
 class DreamGlobalBg extends StatelessWidget {
   const DreamGlobalBg({Key? key}) : super(key: key);
@@ -48,6 +49,7 @@ class DreamGlobalBg extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: DreamGlobalButton(),
+                  //child: NoDreamButton(),
                 ),
               ],
             ),
