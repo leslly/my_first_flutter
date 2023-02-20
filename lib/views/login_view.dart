@@ -91,7 +91,7 @@ class LoginView extends StatelessWidget {
                 //Button
                 const ButtonGlobal(),
                 const SizedBox(height: 70),
-                SocialLogins(),
+                const SocialLogins(),
               ],
             ),
           ),
@@ -104,7 +104,7 @@ class LoginView extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Don't have an account ?",
             ),
             InkWell(

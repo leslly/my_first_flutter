@@ -58,6 +58,7 @@ class DreamGlobalButton extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
+                  color: Colors.black54,
                   fontFamily: 'Reem',
                   fontSize: 16,
                   height: 1.2,

@@ -40,7 +40,6 @@ class NoDreamButton extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     height: 1.2,
-                    color: Colors.black,
                   ),
                 ),
                 SizedBox(
@@ -55,7 +54,6 @@ class NoDreamButton extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                     fontSize: 16,
                     height: 1.2,
-                    color: Colors.black
                   ),
                 ),
                 SizedBox(

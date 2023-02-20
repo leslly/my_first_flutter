@@ -48,7 +48,7 @@ class CategoryOneButton extends StatelessWidget {
                 Expanded(
                   child: Text(
                     "Technical skills are specific type of ability and practical knowledge of processes and technology. These are practical skills like AI/ML and programming .",
-                    maxLines: 2,
+                    maxLines: 4,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontWeight: FontWeight.normal,
