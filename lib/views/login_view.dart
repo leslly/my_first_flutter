@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/widgets/button_global.dart';
-import 'package:my_first_flutter/views/widgets/dream_global/dream_global_bg.dart';
 import 'package:my_first_flutter/views/widgets/social_login.dart';
 import 'package:my_first_flutter/views/widgets/text_form_global.dart';
+import 'package:my_first_flutter/views/sign_up_view.dart';
 
 class LoginView extends StatelessWidget {
    LoginView({Key? key}) : super(key: key);
@@ -30,6 +30,7 @@ class LoginView extends StatelessWidget {
                       Text(
                         'c',
                         style: TextStyle(
+                          fontFamily: 'Reem',
                           color: GlobalColor.black,
                           fontSize: 50,
                           fontWeight: FontWeight.bold,
@@ -39,6 +40,7 @@ class LoginView extends StatelessWidget {
                         child: Text(
                           'e',
                           style: TextStyle(
+                            fontFamily: 'Reem',
                             color: GlobalColor.red,
                             fontSize: 50,
                             fontWeight: FontWeight.bold,
@@ -48,6 +50,7 @@ class LoginView extends StatelessWidget {
                       Text(
                         'llSolution',
                         style: TextStyle(
+                          fontFamily: 'Reem',
                           color: GlobalColor.black,
                           fontSize: 50,
                           fontWeight: FontWeight.bold,
@@ -87,7 +90,7 @@ class LoginView extends StatelessWidget {
                 const SizedBox(height: 50),
                 //Button
                 const ButtonGlobal(),
-                const SizedBox(height: 20),
+                const SizedBox(height: 70),
                 SocialLogins(),
               ],
             ),
@@ -105,6 +108,9 @@ class LoginView extends StatelessWidget {
               "Don't have an account ?",
             ),
             InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpView()));
+              },
               child: Text(
                 'Sign Up',
                   style: TextStyle(
