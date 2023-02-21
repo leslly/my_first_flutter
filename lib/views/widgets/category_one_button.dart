@@ -61,7 +61,7 @@ class CategoryOneButton extends StatelessWidget {
                 const Align(
                   alignment: Alignment.bottomRight,
                   child: Icon(
-                    Icons.chevron_right_outlined,
+                    Icons.arrow_forward_rounded,
                   ),
                 ),
               ],

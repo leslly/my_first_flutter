@@ -46,7 +46,7 @@ class CategoryTwoButton extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   "Hard skills are objective, quantifiable skills gained through training, school or work experiences. These are skills like project management and data analysis .",
-                  maxLines: 2,
+                  maxLines: 4,
                   overflow: TextOverflow.fade,
                   style: TextStyle(
                     fontFamily: 'Reem',
@@ -59,7 +59,7 @@ class CategoryTwoButton extends StatelessWidget {
                 const Align(
                   alignment: Alignment.bottomRight,
                   child: Icon(
-                    Icons.chevron_right_outlined,
+                    Icons.arrow_forward_rounded,
                   ),
                 ),
               ],

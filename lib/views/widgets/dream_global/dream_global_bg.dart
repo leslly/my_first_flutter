@@ -35,6 +35,7 @@ class DreamGlobalBg extends StatelessWidget {
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(20),
               child: Container(
+                //// This is where we have the curved edges
                 decoration: BoxDecoration(
                     color: GlobalColor.blue,
                     borderRadius: const BorderRadius.only(

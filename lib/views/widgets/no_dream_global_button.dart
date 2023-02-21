@@ -61,6 +61,11 @@ class NoDreamButton extends StatelessWidget {
                 ),
                 Row(
                   children: const [
+                    Icon(
+                      Icons.circle_sharp,
+                      size: 8,
+                    ),
+                    SizedBox(width: 5),
                     Text(
                       "AI Generated - 3 simple steps",
                       maxLines: 2,
@@ -73,9 +78,9 @@ class NoDreamButton extends StatelessWidget {
                         height: 1.2,
                       ),
                     ),
-                    SizedBox(width: 97),
+                    SizedBox(width: 70),
                     Icon(
-                      Icons.chevron_right_outlined,
+                      Icons.arrow_forward_rounded,
                     ),
                   ],
                 ),

@@ -12,11 +12,13 @@ class NoDreamView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
-        physics: const BouncingScrollPhysics(
-          parent: AlwaysScrollableScrollPhysics(),
-        ),
+        // physics: const BouncingScrollPhysics(
+        //   parent: NeverScrollableScrollPhysics(),
+        // ),
         slivers: [
           SliverAppBar(
+            backgroundColor: GlobalColor.white,
+            foregroundColor: Colors.black,
             automaticallyImplyLeading: true,
             toolbarHeight: 70,
             title: Row(
@@ -35,9 +37,9 @@ class NoDreamView extends StatelessWidget {
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(20),
               child: Container(
-                decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
+                decoration: BoxDecoration(
+                    color: GlobalColor.blue,
+                    borderRadius: const BorderRadius.only(
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
                 width: double.maxFinite,
@@ -59,32 +61,38 @@ class NoDreamView extends StatelessWidget {
             flexibleSpace: const FlexibleSpaceBar(),
           ),
           SliverToBoxAdapter(
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 25,
-                ),
-                Container(
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
+            child: Container(
+              height: 733,
+              decoration: BoxDecoration(
+                color: GlobalColor.blue,
+              ),
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 25,
                   ),
-                  child: const CategoryOneButton(),
-                ),
-                const SizedBox(height: 20),
-                Container(
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
+                  Container(
+                    decoration: BoxDecoration(
+                      color: GlobalColor.blue,
+                    ),
+                    child: const CategoryOneButton(),
                   ),
-                  child: const CategoryTwoButton(),
-                ),
-                const SizedBox(height: 20),
-                Container(
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
+                  const SizedBox(height: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: GlobalColor.blue,
+                    ),
+                    child: const CategoryTwoButton(),
                   ),
-                  child: const CategoryThreeButton(),
-                ),
-              ],
+                  const SizedBox(height: 20),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: GlobalColor.blue,
+                    ),
+                    child: const CategoryThreeButton(),
+                  ),
+                ],
+              ),
             ),
           ),
         ],

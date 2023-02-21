@@ -55,6 +55,13 @@ class DreamGlobalButton extends StatelessWidget {
                 const SizedBox(height: 10,),
                 Row(
                   children: const [
+                    Icon(
+                      Icons.circle_sharp,
+                     size: 8,
+                     // Icons.brightness_1_sharp,circle_sharp,arrow_forward_rounded
+                      //check_sharp
+                    ),
+                    SizedBox(width: 5),
                     Text(
                       "AI Generated - 3 simple steps",
                       maxLines: 2,
@@ -66,9 +73,9 @@ class DreamGlobalButton extends StatelessWidget {
                         height: 1.2,
                       ),
                     ),
-                    SizedBox(width: 97),
+                    SizedBox(width: 70),
                     Icon(
-                      Icons.chevron_right_outlined,
+                      Icons.arrow_forward_rounded,
                     ),
                   ],
                 ),
