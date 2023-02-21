@@ -10,7 +10,7 @@ class CategoryThreeButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryThreeView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryThreeView()));
       },
       child: Container(
         alignment: Alignment.center,
@@ -30,7 +30,7 @@ class CategoryThreeButton extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   "Soft Skills",
                   maxLines: 2,
@@ -40,23 +40,26 @@ class CategoryThreeButton extends StatelessWidget {
                     fontSize: 20,
                     height: 1.2,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: GlobalColor.black,
                   ),
                 ),
-                SizedBox(
-                  height: 10,
+                const SizedBox(height: 10,),
+                Text(
+                  "Soft skills are character traits and interpersonal skills that characterize a person’s  relationship with other people . These are skills like time management and communication .",
+                  maxLines: 4,
+                  overflow: TextOverflow.fade,
+                  style: TextStyle(
+                    fontFamily: 'Reem',
+                      fontWeight: FontWeight.normal,
+                      fontSize: 16,
+                      height: 1.2,
+                      color: GlobalColor.black,
+                  ),
                 ),
-                Expanded(
-                  child: Text(
-                    "Soft skills are character traits and interpersonal skills that characterize a person’s  relationship with other people . These are skills like time management and communication .",
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 16,
-                        height: 1.2,
-                        color: Colors.black
-                    ),
+                const Align(
+                  alignment: Alignment.bottomRight,
+                  child: Icon(
+                    Icons.chevron_right_outlined,
                   ),
                 ),
               ],

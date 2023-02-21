@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import '../dream_global_button.dart';
@@ -22,9 +21,14 @@ class DreamGlobalBg extends StatelessWidget {
             toolbarHeight: 70,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   'Welcome User',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'Reem',
+                    color: GlobalColor.black,
+                  ),
                 )
               ],
             ),
@@ -52,7 +56,7 @@ class DreamGlobalBg extends StatelessWidget {
               ),
             ),
             pinned: true,
-            expandedHeight: 100,
+            expandedHeight: 150,
             flexibleSpace: const FlexibleSpaceBar(),
           ),
           SliverToBoxAdapter(
@@ -71,8 +75,6 @@ class DreamGlobalBg extends StatelessWidget {
                       color: Colors.blue,
                     ),
                     child: const DreamGlobalButton(),
-
-                    //   child: NoDreamButton(),
                   ),
                   const SizedBox(height: 20),
                   Container(
@@ -80,8 +82,6 @@ class DreamGlobalBg extends StatelessWidget {
                       color: Colors.blue,
                     ),
                     child: const NoDreamButton(),
-
-                    //   child: NoDreamButton(),
                   ),
                 ],
               ),

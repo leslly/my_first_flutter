@@ -3,14 +3,11 @@ import 'package:my_first_flutter/views/widgets/category_one_button.dart';
 import 'package:my_first_flutter/views/widgets/category_two_button.dart';
 import 'package:my_first_flutter/views/widgets/category_three_button.dart';
 
+import '../utils/global_colours.dart';
+
 class NoDreamView extends StatelessWidget {
   const NoDreamView({Key? key}) : super(key: key);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,24 +21,42 @@ class NoDreamView extends StatelessWidget {
             toolbarHeight: 70,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [],
+              children: [
+                Text(
+                  'One step at the time',
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'Reem',
+                    color: GlobalColor.black,
+                  ),
+                ),
+              ],
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(20),
+              preferredSize: const Size.fromHeight(20),
               child: Container(
                 decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
-                child: Center(),
                 width: double.maxFinite,
-                padding: EdgeInsets.only(top: 5, bottom: 10),
+                padding: const EdgeInsets.only(top: 5, bottom: 10),
+                child: Center(
+                  child: Text(
+                    'Take a pick!',
+                    style: TextStyle(
+                      fontFamily: 'Reem',
+                      fontSize: 24,
+                      color: GlobalColor.white,
+                    ),
+                  ),
+                ),
               ),
             ),
             pinned: true,
             expandedHeight: 150,
-            flexibleSpace: FlexibleSpaceBar(),
+            flexibleSpace: const FlexibleSpaceBar(),
           ),
           SliverToBoxAdapter(
             child: Column(
@@ -53,9 +68,21 @@ class NoDreamView extends StatelessWidget {
                   decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
-                  child: CategoryOneButton(),
-                  // child: CategoryTwoButton(),
-                  // child: CategoryThreeButton(),
+                  child: const CategoryOneButton(),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: const CategoryTwoButton(),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: const CategoryThreeButton(),
                 ),
               ],
             ),

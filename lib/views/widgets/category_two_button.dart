@@ -10,7 +10,7 @@ class CategoryTwoButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryTwoView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryTwoView()));
       },
       child: Container(
         alignment: Alignment.center,
@@ -30,32 +30,36 @@ class CategoryTwoButton extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   "Hard Skills",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
+                    fontFamily: 'Reem',
                     fontSize: 20,
                     height: 1.2,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: GlobalColor.black,
                   ),
                 ),
-                SizedBox(
-                  height: 10,
+                const SizedBox(height: 10),
+                Text(
+                  "Hard skills are objective, quantifiable skills gained through training, school or work experiences. These are skills like project management and data analysis .",
+                  maxLines: 2,
+                  overflow: TextOverflow.fade,
+                  style: TextStyle(
+                    fontFamily: 'Reem',
+                      fontWeight: FontWeight.normal,
+                      fontSize: 16,
+                      height: 1.2,
+                      color: GlobalColor.black,
+                  ),
                 ),
-                Expanded(
-                  child: Text(
-                    "Hard skills are objective, quantifiable skills gained through training, school or work experiences. These are skills like project management and data analysis .",
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 16,
-                        height: 1.2,
-                        color: Colors.black
-                    ),
+                const Align(
+                  alignment: Alignment.bottomRight,
+                  child: Icon(
+                    Icons.chevron_right_outlined,
                   ),
                 ),
               ],

@@ -30,8 +30,8 @@ class NoDreamButton extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Text(
+              children:  [
+                const Text(
                   "I don't have a dream role in mind ?",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
@@ -42,40 +42,42 @@ class NoDreamButton extends StatelessWidget {
                     height: 1.2,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "Build your career map manually without AI role recommendation",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontFamily: 'Reem',
                     fontWeight: FontWeight.normal,
-                    fontSize: 16,
+                    fontSize: 18,
                     height: 1.2,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
-                  "AI Generated - 3 simple steps",
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontFamily: 'Reem',
-                    fontWeight: FontWeight.normal,
-                    color: Colors.black54,
-                    fontSize: 16,
-                    height: 1.2,
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: Icon(
-                    Icons.chevron_right_outlined,
-                  ),
+                Row(
+                  children: const [
+                    Text(
+                      "AI Generated - 3 simple steps",
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontFamily: 'Reem',
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black54,
+                        fontSize: 16,
+                        height: 1.2,
+                      ),
+                    ),
+                    SizedBox(width: 97),
+                    Icon(
+                      Icons.chevron_right_outlined,
+                    ),
+                  ],
                 ),
               ],
             )
