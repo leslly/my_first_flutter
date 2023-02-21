@@ -71,6 +71,12 @@ class NoDreamButton extends StatelessWidget {
                     height: 1.2,
                   ),
                 ),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: Icon(
+                    Icons.chevron_right_outlined,
+                  ),
+                ),
               ],
             )
         ),

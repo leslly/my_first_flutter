@@ -22,33 +22,38 @@ class DreamGlobalBg extends StatelessWidget {
             toolbarHeight: 70,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text(
                   'Welcome User',
                 )
               ],
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(20),
+              preferredSize: const Size.fromHeight(20),
               child: Container(
                 decoration: BoxDecoration(
                     color: GlobalColor.blue,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
+                width: double.maxFinite,
+                padding: const EdgeInsets.only(top: 5, bottom: 10),
+
                 child: Center(
                   child: Text(
-                    "Let's build your career map."
+                    "Let's build your career map.",
+                    style: TextStyle(
+                      fontFamily: 'Reem',
+                      fontSize: 24,
+                      color: GlobalColor.white,
+                    ),
                   ),
                 ),
-                width: double.maxFinite,
-                padding: EdgeInsets.only(top: 5, bottom: 10),
-
               ),
             ),
             pinned: true,
             expandedHeight: 100,
-            flexibleSpace: FlexibleSpaceBar(),
+            flexibleSpace: const FlexibleSpaceBar(),
           ),
           SliverToBoxAdapter(
             child: Container(
@@ -65,16 +70,16 @@ class DreamGlobalBg extends StatelessWidget {
                     decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
-                    child: DreamGlobalButton(),
+                    child: const DreamGlobalButton(),
 
                     //   child: NoDreamButton(),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Container(
                     decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
-                    child: NoDreamButton(),
+                    child: const NoDreamButton(),
 
                     //   child: NoDreamButton(),
                   ),
