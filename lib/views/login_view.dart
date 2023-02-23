@@ -22,7 +22,7 @@ class LoginView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [//inside the column
                 const SizedBox(height: 20),
-                Container( // container for the logo
+                Container(// container for the logo
                   alignment: Alignment.center,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -60,37 +60,44 @@ class LoginView extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 50),
-                Text(
-                  'Login to your account',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontFamily: "Roboto",
-                    fontWeight: FontWeight.bold,
-                    color: GlobalColor.black,
+                Padding(
+                  padding: const EdgeInsets.only(left: 18.0),
+                  child: Text(
+                    'Login to your account',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.bold,
+                      color: GlobalColor.black,
+                    ),
                   ),
                 ),
-                const SizedBox(height: 15), //Are the logo,text and textfield seperated by the siwed box
+                const SizedBox(height: 40), //Are the logo,text and textfield seperated by the siwed box
                 ////Email Input
-                TextFormGlobal(controller: emailController,
-                  text: 'Email',
-                  obscure: false,
-                  textInputType: TextInputType.emailAddress,
+                Center(
+                  child: TextFormGlobal(controller: emailController,
+                    text: 'Email',
+                    obscure: false,
+                    textInputType: TextInputType.emailAddress,
+                  ),
                 ),
                 ////Email Input End
-                const SizedBox(height: 10),// space b/w the email and pwd form
+                const SizedBox(height: 30),// space b/w the email and pwd form
 
                 //// Password Input
-                TextFormGlobal(
-                  controller: passwordController ,
-                  text: 'password',
-                  textInputType: TextInputType.text,
-                  obscure: true,
+                Center(
+                  child: TextFormGlobal(
+                    controller: passwordController ,
+                    text: 'password',
+                    textInputType: TextInputType.text,
+                    obscure: true,
+                  ),
                 ),
                 ////password Input End
                 const SizedBox(height: 50),
                 //Button
                 const ButtonGlobal(),
-                const SizedBox(height: 70),
+                const SizedBox(height: 40),
                 const SocialLogins(),
               ],
             ),
@@ -99,7 +106,6 @@ class LoginView extends StatelessWidget {
       ),
       bottomNavigationBar: Container( // I don't know why the text was put in a navigation bar
         height: 50,
-        color: Colors.white,
         alignment: Alignment.center, // the text is not centered
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

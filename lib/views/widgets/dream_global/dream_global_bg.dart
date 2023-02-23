@@ -17,10 +17,10 @@ class DreamGlobalBg extends StatelessWidget {
           SliverAppBar(
             backgroundColor: GlobalColor.white,
             foregroundColor: Colors.black,
-            automaticallyImplyLeading: true,
+            automaticallyImplyLeading: false,
             toolbarHeight: 70,
             title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   'Welcome User',

@@ -43,15 +43,13 @@ class NoDreamView extends StatelessWidget {
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
                 width: double.maxFinite,
-                padding: const EdgeInsets.only(top: 5, bottom: 10),
-                child: Center(
-                  child: Text(
-                    'Take a pick!',
-                    style: TextStyle(
-                      fontFamily: 'Reem',
-                      fontSize: 24,
-                      color: GlobalColor.white,
-                    ),
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                  'Take a pick!',
+                  style: TextStyle(
+                    fontFamily: 'Reem',
+                    fontSize: 24,
+                    color: GlobalColor.white,
                   ),
                 ),
               ),

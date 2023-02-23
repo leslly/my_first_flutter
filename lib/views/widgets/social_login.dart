@@ -17,7 +17,7 @@ class SocialLogins extends StatelessWidget {
                 fontSize: 18,
               )),
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 60),
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.8,
           child: Row(
@@ -28,13 +28,13 @@ class SocialLogins extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: GlobalColor.white,
+                   // color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
                     boxShadow:const [
-                      BoxShadow(
-                      color: Colors.black,
-                      blurRadius: 10,
-                     ),
+                     //  BoxShadow(
+                     //  color: Colors.black,
+                     //  blurRadius: 10,
+                     // ),
                     ],
                   ),
                   child: SvgPicture.asset(
@@ -50,14 +50,14 @@ class SocialLogins extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: GlobalColor.white,
+                   // color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow:const [
-                      BoxShadow(
-                        color: Colors.black,
-                        blurRadius: 10,
-                      ),
-                    ],
+                    // boxShadow:const [
+                    //   BoxShadow(
+                    //     color: Colors.black,
+                    //     blurRadius: 10,
+                    //   ),
+                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/icons8-github.svg',
@@ -72,18 +72,18 @@ class SocialLogins extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: GlobalColor.white,
+                    //color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow:const [
-                      BoxShadow(
-                        color: Colors.black,
-                        blurRadius: 10,
-                      ),
-                    ],
+                    // boxShadow:const [
+                    //   BoxShadow(
+                    //     color: Colors.black,
+                    //     blurRadius: 10,
+                    //   ),
+                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/icons8-linkedin-circled.svg',
-                    height: 20,
+                    height: 30,
                   ),
                 ),
               ),

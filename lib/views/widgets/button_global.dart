@@ -12,6 +12,7 @@ class ButtonGlobal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
       child: InkWell(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => DreamGlobalBg()));
@@ -20,7 +21,8 @@ class ButtonGlobal extends StatelessWidget {
         },
         child: Container(
           alignment: Alignment.center,
-          height: 55,
+          height: 50,
+          width: 339,
           decoration: BoxDecoration(
               color: GlobalColor.blue,
               borderRadius: BorderRadius.circular(6),
