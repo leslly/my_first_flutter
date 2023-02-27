@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/views/widgets/category_one_button.dart';
-import 'package:my_first_flutter/views/widgets/category_two_button.dart';
-import 'package:my_first_flutter/views/widgets/category_three_button.dart';
+import 'package:my_first_flutter/views/widgets/categories/category_one_button.dart';
+import 'package:my_first_flutter/views/widgets/categories/category_two_button.dart';
+import 'package:my_first_flutter/views/widgets/categories/category_three_button.dart';
 
-import '../utils/global_colours.dart';
+import '../../../utils/global_colours.dart';
 
 class NoDreamView extends StatelessWidget {
   const NoDreamView({Key? key}) : super(key: key);

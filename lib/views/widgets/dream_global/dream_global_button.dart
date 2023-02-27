@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
-import 'package:my_first_flutter/views/dream_view.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/dream_view.dart';
 
 class DreamGlobalButton extends StatelessWidget {
   const DreamGlobalButton({Key? key}) : super(key: key);

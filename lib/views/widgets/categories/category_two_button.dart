@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/views/category_one_view.dart';
+import 'package:my_first_flutter/views/widgets/categories/category_two_view.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 
-class CategoryOneButton extends StatelessWidget {
-  const CategoryOneButton({Key? key}) : super(key: key);
+class CategoryTwoButton extends StatelessWidget {
+  const CategoryTwoButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryOneView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryTwoView()));
       },
       child: Container(
         alignment: Alignment.center,
@@ -32,7 +32,7 @@ class CategoryOneButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Technical Skills",
+                  "Hard Skills",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -45,17 +45,15 @@ class CategoryOneButton extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "Technical skills are specific type of ability"
-                      " and practical knowledge of processes and technology."
-                      " These are practical skills like AI/ML and programming.",
+                  "Hard skills are objective, quantifiable skills gained through training, school or work experiences. These are skills like project management and data analysis .",
                   maxLines: 4,
                   overflow: TextOverflow.fade,
                   style: TextStyle(
                     fontFamily: 'Reem',
-                    fontWeight: FontWeight.normal,
+                      fontWeight: FontWeight.normal,
                       fontSize: 16,
                       height: 1.2,
-                    color: GlobalColor.black,
+                      color: GlobalColor.black,
                   ),
                 ),
                 const Align(

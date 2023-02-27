@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/views/category_two_view.dart';
+import 'package:my_first_flutter/views/widgets/categories/category_three_view.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 
-class CategoryTwoButton extends StatelessWidget {
-  const CategoryTwoButton({Key? key}) : super(key: key);
+class CategoryThreeButton extends StatelessWidget {
+  const CategoryThreeButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryTwoView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryThreeView()));
       },
       child: Container(
         alignment: Alignment.center,
@@ -32,7 +32,7 @@ class CategoryTwoButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Hard Skills",
+                  "Soft Skills",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -43,9 +43,9 @@ class CategoryTwoButton extends StatelessWidget {
                     color: GlobalColor.black,
                   ),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 10,),
                 Text(
-                  "Hard skills are objective, quantifiable skills gained through training, school or work experiences. These are skills like project management and data analysis .",
+                  "Soft skills are character traits and interpersonal skills that characterize a person’s  relationship with other people . These are skills like time management and communication .",
                   maxLines: 4,
                   overflow: TextOverflow.fade,
                   style: TextStyle(
@@ -69,3 +69,5 @@ class CategoryTwoButton extends StatelessWidget {
     );
   }
 }
+
+

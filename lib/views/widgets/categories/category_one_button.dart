@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/views/category_three_view.dart';
+import 'package:my_first_flutter/views/widgets/categories/category_one_view.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 
-class CategoryThreeButton extends StatelessWidget {
-  const CategoryThreeButton({Key? key}) : super(key: key);
+class CategoryOneButton extends StatelessWidget {
+  const CategoryOneButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryThreeView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryOneView()));
       },
       child: Container(
         alignment: Alignment.center,
@@ -32,7 +32,7 @@ class CategoryThreeButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Soft Skills",
+                  "Technical Skills",
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -43,17 +43,19 @@ class CategoryThreeButton extends StatelessWidget {
                     color: GlobalColor.black,
                   ),
                 ),
-                const SizedBox(height: 10,),
+                const SizedBox(height: 10),
                 Text(
-                  "Soft skills are character traits and interpersonal skills that characterize a person’s  relationship with other people . These are skills like time management and communication .",
+                  "Technical skills are specific type of ability"
+                      " and practical knowledge of processes and technology."
+                      " These are practical skills like AI/ML and programming.",
                   maxLines: 4,
                   overflow: TextOverflow.fade,
                   style: TextStyle(
                     fontFamily: 'Reem',
-                      fontWeight: FontWeight.normal,
+                    fontWeight: FontWeight.normal,
                       fontSize: 16,
                       height: 1.2,
-                      color: GlobalColor.black,
+                    color: GlobalColor.black,
                   ),
                 ),
                 const Align(
@@ -69,5 +71,3 @@ class CategoryThreeButton extends StatelessWidget {
     );
   }
 }
-
-

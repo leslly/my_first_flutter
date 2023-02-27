@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
-import 'package:my_first_flutter/views/widgets/button_global.dart';
-import 'package:my_first_flutter/views/widgets/social_login.dart';
-import 'package:my_first_flutter/views/widgets/text_form_global.dart';
-import 'package:my_first_flutter/views/sign_up_view.dart';
+import 'package:my_first_flutter/login/button_global.dart';
+import 'package:my_first_flutter/login/social_login.dart';
+import 'package:my_first_flutter/utils/text_form_global.dart';
+import 'package:my_first_flutter/login/sign_up_view.dart';
 
 class LoginView extends StatelessWidget {
    LoginView({Key? key}) : super(key: key);

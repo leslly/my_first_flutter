@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/views/no_dream_view.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/no_dream_view.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 
 class NoDreamButton extends StatelessWidget {

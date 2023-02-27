@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
-import '../dream_global_button.dart';
-import '../no_dream_global_button.dart';
+import 'dream_global_button.dart';
+import 'no_dream_global_button.dart';
 
 class DreamGlobalBg extends StatelessWidget {
   const DreamGlobalBg({Key? key}) : super(key: key);

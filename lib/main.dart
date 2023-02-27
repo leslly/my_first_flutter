@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_flutter/home/home_page.dart';
-import 'package:my_first_flutter/views/splash_view.dart';
+import 'package:my_first_flutter/login/splash_view.dart';
 
 void main() {
   runApp(const MyApp());

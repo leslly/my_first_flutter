@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
-import 'package:my_first_flutter/views/widgets/dream_global_button.dart';
-import 'package:my_first_flutter/views/widgets/no_dream_global_button.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/dream_global_button.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/no_dream_global_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

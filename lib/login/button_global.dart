@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/home/home_page.dart';
-import 'package:my_first_flutter/views/widgets/dream_global_button.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/dream_global_button.dart';
 
-import 'dream_global/dream_global_bg.dart';
+import '../views/widgets/dream_global/dream_global_bg.dart';
 
 
 class ButtonGlobal extends StatelessWidget {
