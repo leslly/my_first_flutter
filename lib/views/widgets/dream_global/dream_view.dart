@@ -31,16 +31,14 @@ class DreamView extends StatelessWidget {
           ],
         ),
       ),
-      body: SingleChildScrollView(
-        physics:  const BouncingScrollPhysics(
-          parent: AlwaysScrollableScrollPhysics(),
-        ),
-        child: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              //const SizedBox(height: 50),
-              Container(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //const SizedBox(height: 50),
+            Container(
+              color: GlobalColor.white,
+              child: Container(
                 alignment: Alignment.center,
                 decoration: const BoxDecoration(
                     color: Colors.blue,
@@ -72,8 +70,8 @@ class DreamView extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

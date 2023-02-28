@@ -18,22 +18,21 @@ class DreamGlobalBg extends StatelessWidget {
             backgroundColor: GlobalColor.white,
             foregroundColor: Colors.black,
             automaticallyImplyLeading: false,
-            toolbarHeight: 70,
-            title: Row(
-             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
+            toolbarHeight: 120,
+            title: Container(
+              margin: EdgeInsets.only(top: 60, right: 0),
+              child: Container(
+                child: Text(
                   'Welcome User',
                   style: TextStyle(
-                    fontSize: 25,
-                    fontFamily: 'Reem',
-                    color: GlobalColor.black,
-                  ),
-                )
-              ],
+                      fontSize: 25,
+                      fontFamily: 'Reem',
+                      color: GlobalColor.black),
+                ),
+              ),
             ),
             bottom: PreferredSize(
-              preferredSize: const Size.fromHeight(20),
+              preferredSize: const Size.fromHeight(10),
               child: Container(
                 //// This is where we have the curved edges
                 decoration: BoxDecoration(
