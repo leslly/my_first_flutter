@@ -18,14 +18,22 @@ class LabelGlobal extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           color: GlobalColor.white,
         ),
-        child: Text(
-          text,
-          style: TextStyle(
-            color: GlobalColor.black,
-            fontFamily: 'Roboto',
-            fontSize: 14,
-            fontWeight: FontWeight.normal,
-          ),
+        child: Row(
+          children: [
+            Text(
+              text,
+              style: TextStyle(
+                color: GlobalColor.black,
+                fontFamily: 'Roboto',
+                fontSize: 14,
+                fontWeight: FontWeight.normal,
+              ),
+            ),
+            Icon(
+              Icons.check_sharp,
+              //clear_sharp
+            ),
+          ],
         ),
       ),
     );
