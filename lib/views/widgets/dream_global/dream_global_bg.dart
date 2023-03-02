@@ -21,14 +21,12 @@ class DreamGlobalBg extends StatelessWidget {
             toolbarHeight: 120,
             title: Container(
               margin: EdgeInsets.only(top: 60, right: 0),
-              child: Container(
-                child: Text(
-                  'Welcome User',
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Reem',
-                      color: GlobalColor.black),
-                ),
+              child: Text(//container was here
+                'Welcome User',
+                style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'Reem',
+                    color: GlobalColor.black),
               ),
             ),
             bottom: PreferredSize(
