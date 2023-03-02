@@ -11,7 +11,7 @@ class LabelTwo extends StatefulWidget {
 
 class _LabelTwoState extends State<LabelTwo> {
 
-  Color _colorOfButton = Colors.white;
+  bool _colorOfButton = true;
   Color _secondColorOfButton = Colors.black;
   Color _textColor = Colors.white;
   Color _secondTextColor = Colors.black;
@@ -20,10 +20,9 @@ class _LabelTwoState extends State<LabelTwo> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-
         setState(() {
-          _colorOfButton = _secondColorOfButton;
-          if(Color == _secondColorOfButton){
+          _colorOfButton = !_colorOfButton;
+          if(Color == !_colorOfButton){
             Icon(
               Icons.clear_sharp,
               color:_textColor,
@@ -44,6 +43,7 @@ class _LabelTwoState extends State<LabelTwo> {
           }
         });
       },
+        child: _colorOfButton ? Icon(Icons.clear_sharp) : Icon(Icons.check_sharp);
       child: Container(
         padding: EdgeInsets.only(left: 8.0, right: 8),
         height: 32,
