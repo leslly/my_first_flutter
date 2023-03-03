@@ -59,6 +59,7 @@ class _LabelTwoState extends State<LabelTwo> {
             Text(
               'global',
               style: TextStyle(
+
                 fontFamily: 'Roboto',
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
