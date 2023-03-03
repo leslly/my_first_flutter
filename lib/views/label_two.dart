@@ -43,7 +43,7 @@ class _LabelTwoState extends State<LabelTwo> {
           }
         });
       },
-        child: _colorOfButton ? Icon(Icons.clear_sharp) : Icon(Icons.check_sharp);
+        // child: _colorOfButton ? Icon(Icons.clear_sharp) : Icon(Icons.check_sharp),
       child: Container(
         padding: EdgeInsets.only(left: 8.0, right: 8),
         height: 32,
@@ -51,7 +51,7 @@ class _LabelTwoState extends State<LabelTwo> {
         // margin: EdgeInsets.only(right: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: _colorOfButton,
+          color: _colorOfButton? Colors.black : Colors.white,
         ),
         child: Row(
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,12 +63,13 @@ class _LabelTwoState extends State<LabelTwo> {
                 fontFamily: 'Roboto',
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
+                color: _colorOfButton? Colors.white : Colors.black
               ),
             ),
             SizedBox(width: 10),
             Icon(
               Icons.check_sharp,
-              //clear_sharp
+                color: _colorOfButton? Colors.white : Colors.black
             ),
           ],
         ),

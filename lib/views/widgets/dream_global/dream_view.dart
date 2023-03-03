@@ -13,6 +13,7 @@ class DreamView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
         backgroundColor: GlobalColor.white,
         foregroundColor: Colors.black,
@@ -47,7 +48,7 @@ class DreamView extends StatelessWidget {
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
                 width: double.maxFinite,
-                height: 600,
+                height: 500,
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
                   children: [

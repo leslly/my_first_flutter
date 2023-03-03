@@ -30,8 +30,8 @@ class LabelGlobal extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.only(left: 8.0, right: 8),
         height: 32,
-        width: 100*2,
-        margin: EdgeInsets.only(right: 200),
+
+        // margin: EdgeInsets.only(right: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: GlobalColor.white,
