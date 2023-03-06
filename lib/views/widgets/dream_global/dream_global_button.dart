@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/widgets/dream_global/dream_view.dart';
+import 'package:my_first_flutter/views/widgets/dream_global/dream_view_teo.dart';
 
 class DreamGlobalButton extends StatelessWidget {
   const DreamGlobalButton({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class DreamGlobalButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: ()  {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => DreamView()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => DreamViewTwo()));
      },
       child: Container(
         alignment: Alignment.center,
