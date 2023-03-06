@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../utils/global_colours.dart';
-
 class LabelTwo extends StatefulWidget {
-  const LabelTwo({Key? key}) : super(key: key);
+  LabelTwo({Key? key,t}) : super(key: key);
 
   @override
   State<LabelTwo> createState() => _LabelTwoState();
@@ -12,9 +10,7 @@ class LabelTwo extends StatefulWidget {
 class _LabelTwoState extends State<LabelTwo> {
 
   bool _colorOfButton = true;
-  Color _secondColorOfButton = Colors.black;
-  Color _textColor = Colors.white;
-  Color _secondTextColor = Colors.black;
+  //String text = 'shopping';
 
   @override
   Widget build(BuildContext context) {
@@ -22,54 +18,34 @@ class _LabelTwoState extends State<LabelTwo> {
       onTap: () {
         setState(() {
           _colorOfButton = !_colorOfButton;
-          if(Color == !_colorOfButton){
-            Icon(
-              Icons.clear_sharp,
-              color:_textColor,
-              //clear_sharp
-            );
-            TextStyle(
-              color: _textColor,
-            );
-          }else if(Color == _colorOfButton){
-            Icon(
-              Icons.check_sharp,
-              color: _secondTextColor,
-              //clear_sharp
-            );
-            TextStyle(
-              color:_secondTextColor,
-            );
-          }
+         // _colorOfButton ? Icons.clear_sharp : Icons.check_sharp;
         });
       },
-        // child: _colorOfButton ? Icon(Icons.clear_sharp) : Icon(Icons.check_sharp),
       child: Container(
-        padding: EdgeInsets.only(left: 8.0, right: 8),
+        padding: const EdgeInsets.only(left: 8.0, right: 8),
         height: 32,
-        // width: 100*2,
-        // margin: EdgeInsets.only(right: 200),
+        width: 100*2,
+         margin: const EdgeInsets.only(right: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: _colorOfButton? Colors.black : Colors.white,
         ),
         child: Row(
-          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'global',
+              'fhjbsh',
               style: TextStyle(
-
                 fontFamily: 'Roboto',
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
                 color: _colorOfButton? Colors.white : Colors.black
               ),
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Icon(
-              Icons.check_sharp,
-                color: _colorOfButton? Colors.white : Colors.black
+              _colorOfButton ? Icons.clear_sharp : Icons.check_sharp,
+                color: _colorOfButton? Colors.white : Colors.black,
             ),
           ],
         ),

@@ -62,38 +62,11 @@ class DreamView extends StatelessWidget {
                       b: 328,
                     ),
                     const SizedBox(height: 30),
-                    LabelGlobal(
-                      changeColor: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => ContentView() ));
-
-                      },
-                      text: 'Project Management',
-                    ),
+                    LabelGlobal(text: 'Project Management'),
                     const SizedBox(height: 15),
-                    LabelGlobal(
-                      changeColor: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => ContentView() ));
-
-                      },
-                      text: 'Technical Writing for beginner in primary school',
-                    ),
+                    LabelGlobal(text: 'Technical Writing for beginner in primary school'),
                     const SizedBox(height: 15),
-                    LabelGlobal(
-                      changeColor: () {
-                        if(Colors == GlobalColor.black){
-                          Icon(
-                            Icons.clear_sharp,
-                            //clear_sharp
-                          );
-                        }else{
-                          Icon(
-                            Icons.check_sharp,
-                            //clear_sharp
-                          );
-                        }
-                      },
-                      text: 'Web development',
-                    ),
+                    LabelGlobal(text: 'Web development'),
                     const SizedBox(height: 15),
                     LabelTwo(),
                   ],
