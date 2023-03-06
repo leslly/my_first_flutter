@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class LabelTwo extends StatefulWidget {
-  LabelTwo({Key? key,t}) : super(key: key);
+  LabelTwo({Key? key,this.text = 'philosophy'}) : super(key: key);
+
+  final String text;
 
   @override
   State<LabelTwo> createState() => _LabelTwoState();
@@ -34,7 +36,7 @@ class _LabelTwoState extends State<LabelTwo> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'fhjbsh',
+              widget.text,
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 14,

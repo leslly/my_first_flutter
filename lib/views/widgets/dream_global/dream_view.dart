@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/utils/text_form_global.dart';
-import 'package:my_first_flutter/views/content_view.dart';
 import 'package:my_first_flutter/views/label_two.dart';
-import 'package:my_first_flutter/views/widgets/label_global.dart';
-
 import '../../../utils/global_colours.dart';
 
 class DreamView extends StatelessWidget {
@@ -62,13 +59,9 @@ class DreamView extends StatelessWidget {
                       b: 328,
                     ),
                     const SizedBox(height: 30),
-                    LabelGlobal(text: 'Project Management'),
+                    LabelTwo( text: 'bread'),
                     const SizedBox(height: 15),
-                    LabelGlobal(text: 'Technical Writing for beginner in primary school'),
-                    const SizedBox(height: 15),
-                    LabelGlobal(text: 'Web development'),
-                    const SizedBox(height: 15),
-                    LabelTwo(),
+                    LabelTwo( text: 'milk and honey'),
                   ],
                 ),
               ),
