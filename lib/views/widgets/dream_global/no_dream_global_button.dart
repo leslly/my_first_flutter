@@ -59,7 +59,7 @@ class NoDreamButton extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                Row(
+                 Row(
                   children: const [
                     Icon(
                       Icons.circle_sharp,
