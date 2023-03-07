@@ -11,10 +11,7 @@ class LabelTwo extends StatefulWidget {
 
 class _LabelTwoState extends State<LabelTwo> {
 
-  bool _colorOfButton = true;
-  Color _secondColorOfButton = Colors.black;
-  Color _textColor = Colors.white;
-  Color _secondTextColor = Colors.black;
+  bool _colorOfButton = false;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +19,7 @@ class _LabelTwoState extends State<LabelTwo> {
       onTap: () {
         setState(() {
           _colorOfButton = !_colorOfButton;
-          if(Color == !_colorOfButton){
+         /* if(Color == !_colorOfButton){
             Icon(
               Icons.clear_sharp,
               color:_textColor,
@@ -40,7 +37,7 @@ class _LabelTwoState extends State<LabelTwo> {
             TextStyle(
               color:_secondTextColor,
             );
-          }
+          }*/
         });
       },
         // child: _colorOfButton ? Icon(Icons.clear_sharp) : Icon(Icons.check_sharp),
@@ -51,7 +48,7 @@ class _LabelTwoState extends State<LabelTwo> {
         // margin: EdgeInsets.only(right: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: _colorOfButton? Colors.black : Colors.white,
+          color: _colorOfButton? Colors.black.withOpacity(0.5) : Colors.white,
         ),
         child: Row(
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,12 +65,39 @@ class _LabelTwoState extends State<LabelTwo> {
             ),
             SizedBox(width: 10),
             Icon(
-              Icons.check_sharp,
-                color: _colorOfButton? Colors.white : Colors.black
+              _colorOfButton? Icons.clear_sharp : Icons.check_sharp,
+              /*Icons.check_sharp,
+                color: _colorOfButton? Colors.white : Colors.black,*/
             ),
           ],
         ),
       ),
     );
+    /*home: Scaffold(
+      appBar: AppBar(
+        title: Text('Click on item to change color and icon'),
+      ),
+      body: Center(
+        child: ListView(
+          children: <Widget>[
+            ListTile(
+              title: Text('Item 1'),
+              leading: Icon(Icons.ac_unit),
+              onTap: () {
+                // Change color and icon
+              },
+            ),
+            ListTile(
+              title: Text('Item 2'),
+              leading: Icon(Icons.access_alarm),
+              onTap: () {
+                // Change color and icon
+              },
+            ),
+          ],
+        ),
+      ),
+    ),*/
+
   }
 }

@@ -67,7 +67,7 @@ class DreamView extends StatelessWidget {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => ContentView() ));
 
                       },
-                      text: 'Project Management',
+                      text: 'Project Management', icon: Icons.clear_sharp,
                     ),
                     const SizedBox(height: 15),
                     LabelGlobal(
@@ -75,24 +75,13 @@ class DreamView extends StatelessWidget {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => ContentView() ));
 
                       },
-                      text: 'Technical Writing for beginner in primary school',
+                      text: 'Technical Writing for beginner in primary school', icon: Icons.clear_sharp,
                     ),
                     const SizedBox(height: 15),
                     LabelGlobal(
                       changeColor: () {
-                        if(Colors == GlobalColor.black){
-                          Icon(
-                            Icons.clear_sharp,
-                            //clear_sharp
-                          );
-                        }else{
-                          Icon(
-                            Icons.check_sharp,
-                            //clear_sharp
-                          );
-                        }
                       },
-                      text: 'Web development',
+                      text: 'Web development', icon: Icons.clear_sharp,
                     ),
                     const SizedBox(height: 15),
                     LabelTwo(),

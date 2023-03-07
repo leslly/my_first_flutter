@@ -10,6 +10,7 @@ class GlobalColor {
   static HexColor white = HexColor('FFFFFF');//white
   static HexColor gray = HexColor('79747E');//gray
   static HexColor blackTwo = HexColor('16131A');//next button
+  static final Color iconColor = const Color(0xff949292);
 
   //static final Color textColor = const Color(0xff25d366);
 }
