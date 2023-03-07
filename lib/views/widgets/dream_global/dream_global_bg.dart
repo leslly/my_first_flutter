@@ -18,9 +18,9 @@ class DreamGlobalBg extends StatelessWidget {
             backgroundColor: GlobalColor.white,
             foregroundColor: Colors.black,
             automaticallyImplyLeading: false,
-            toolbarHeight: 120,
+            toolbarHeight: 150,
             title: Container(
-              margin: EdgeInsets.only(top: 60, right: 0),
+              margin: EdgeInsets.only(top: 0, right: 0),
               child: Text(//container was here
                 'Welcome User',
                 style: TextStyle(
@@ -53,9 +53,9 @@ class DreamGlobalBg extends StatelessWidget {
                 ),
               ),
             ),
-            pinned: true,
-            expandedHeight: 150,
-            flexibleSpace: const FlexibleSpaceBar(),
+            // pinned: true,
+            // expandedHeight: 150,
+            // flexibleSpace: const FlexibleSpaceBar(),
           ),
           SliverToBoxAdapter(
             child: Container(
