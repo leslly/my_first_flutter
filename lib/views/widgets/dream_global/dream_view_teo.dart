@@ -1,63 +1,60 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/utils/text_form_global.dart';
-import 'package:my_first_flutter/views/label_two.dart';
 import '../../../utils/global_colours.dart';
+import '../../../utils/text_form_global.dart';
+import '../../label_two.dart';
 
-class DreamView extends StatelessWidget {
-   DreamView({Key? key}) : super(key: key);
+class DreamViewTwo extends StatelessWidget {
+   DreamViewTwo({Key? key}) : super(key: key);
+
   final TextEditingController searchController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
-      appBar: AppBar(
-        backgroundColor: GlobalColor.white,
-        foregroundColor: Colors.black,
-        automaticallyImplyLeading: true,
-        toolbarHeight: 170,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              'Pick your skills!',
-              style: TextStyle(
-                fontSize: 25,
-                fontFamily: 'Reem',
-                color: GlobalColor.black,
+      body: CustomScrollView(
+        physics: const BouncingScrollPhysics(
+          parent: AlwaysScrollableScrollPhysics(),
+        ),
+        slivers: [
+          SliverAppBar(
+            backgroundColor: GlobalColor.white,
+            foregroundColor: Colors.black,
+            automaticallyImplyLeading: true,
+            toolbarHeight: 120,
+            title: Container(
+              margin: const EdgeInsets.only(top: 60, right: 0),
+              child: Text(//container was here
+                'Pick your skills!!',
+                style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'Reem',
+                    color: GlobalColor.black),
               ),
             ),
-          ],
-        ),
-      ),
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //const SizedBox(height: 50),
-            Container(
-              color: GlobalColor.white,
+            bottom: PreferredSize(
+              preferredSize: const Size.fromHeight(10),
               child: Container(
-                alignment: Alignment.center,
-                decoration: const BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.only(
+                //// This is where we have the curved edges
+                decoration: BoxDecoration(
+                    color: GlobalColor.blue,
+                    borderRadius: const BorderRadius.only(
                         topRight: Radius.circular(20),
                         topLeft: Radius.circular(20))),
                 width: double.maxFinite,
                 height: 500,
-                padding: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.only(top: 5, bottom: 10),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      const SizedBox(height: 10),
-                      TextFormGlobal(
-                        controller: searchController,
-                        text: 'Search for skills',
-                        textInputType: TextInputType.text,
-                        obscure: false,
-                        a: 28,
-                        b: 328,
+                      Center(
+                        child: TextFormGlobal(
+                          controller: searchController,
+                          text: 'Search for skills',
+                          textInputType: TextInputType.text,
+                          obscure: false,
+                          a: 28,
+                          b: 328,
+                        ),
                       ),
                       const SizedBox(height: 30),
                       LabelTwo( text: 'bread'),
@@ -106,8 +103,13 @@ class DreamView extends StatelessWidget {
                 ),
               ),
             ),
-          ],
-        ),
+            pinned: true,
+            expandedHeight: 150,
+            flexibleSpace: const FlexibleSpaceBar(),
+          ),
+          // SliverToBoxAdapter(
+          // ),
+        ],
       ),
     );
   }
