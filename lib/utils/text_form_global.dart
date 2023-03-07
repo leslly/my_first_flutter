@@ -29,10 +29,13 @@ class TextFormGlobal extends StatelessWidget {
         controller: controller,
         keyboardType: textInputType,
         obscureText: obscure,
+
         decoration: InputDecoration(
           hintText: text,
           border: InputBorder.none,
           contentPadding: const EdgeInsets.all(0),
+          icon: Icon(Icons.search_rounded,
+          color: Colors.grey),
           hintStyle: const TextStyle(
             height: 1,
           ),
