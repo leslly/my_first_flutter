@@ -15,9 +15,9 @@ class DreamViewTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
-        physics: const BouncingScrollPhysics(
+        /*physics: const BouncingScrollPhysics(
           parent: AlwaysScrollableScrollPhysics(),
-        ),
+        ),*/
         slivers: [
           SliverAppBar(
             backgroundColor: GlobalColor.white,
@@ -121,49 +121,66 @@ class DreamViewTwo extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: Container( // I don't know why the text was put in a navigation bar
-        height: 100,
+      bottomNavigationBar: Container(
+        height: 80,
         color: GlobalColor.blue,
         alignment: Alignment.center, // the text is not centered
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           NextButton(
-               next: () {
-                 CupertinoAlertDialog(
-                   content: Text(
-                     'Would you like to move on to another category of skills or move on to your courses .',
-                     style: TextStyle(
-                       color: GlobalColor.black,
-                       fontFamily: 'Roboto',
-                       fontSize: 14,
-                       fontWeight: FontWeight.normal,
-                     ),
-                   ),
-                   actions: [
-                     CupertinoDialogAction(child: Text(
-                       'Yes',
-                       style: TextStyle(
-                         color: GlobalColor.black,
-                         fontFamily: 'Roboto',
-                         fontSize: 15,
-                         fontWeight: FontWeight.normal,
-                       ),
-                     )),
-                     CupertinoDialogAction(child: Text(
-                       'No',
-                       style: TextStyle(
-                         color: GlobalColor.black,
-                         fontFamily: 'Roboto',
-                         fontSize: 15,
-                         fontWeight: FontWeight.normal,
-                       ),
-                     )),
-                   ],
-                 );
-                //// Navigator.push(context, MaterialPageRoute(builder: (context) => ContentView()));
-               },
-           ),
+            TextButton(
+              onPressed: () {
+                showCupertinoModalPopup<void>(
+                  context: context,
+                  builder: (BuildContext context) => CupertinoAlertDialog(
+                    content: const Text(
+                        'Proceed with Leslie mobile application on selected programs.', style:TextStyle(
+                       fontSize: 16,
+                    ),
+                    ),
+                    actions: <CupertinoDialogAction>[
+                      CupertinoDialogAction(
+                        isDefaultAction: true,
+                        textStyle: TextStyle(
+                          color: Colors.blue,
+                        ),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Text('Cancel'),
+                      ),
+                      CupertinoDialogAction(
+                        isDestructiveAction: true,
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Text('Yes,Continue'),
+                      ),
+                    ],
+                  ),
+                );
+              },
+              child: Container(
+                alignment: Alignment.center,
+                width: 280,
+                height: 45,
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(20),
+                      topLeft: Radius.circular(20),
+                      bottomLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20),
+                    ),
+                    color: Colors.black),
+                child: Text(
+                  "Next",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
