@@ -14,8 +14,8 @@ class NextButton extends StatelessWidget {
         alignment: Alignment.center,
         height: 45,
         width: 352,
-        color: GlobalColor.blackTwo,
         decoration: BoxDecoration(
+          color: GlobalColor.blackTwo,
           borderRadius: BorderRadius.circular(30),
         ),
         child: Text(
