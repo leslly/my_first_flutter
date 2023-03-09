@@ -1,6 +1,9 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter/views/next_global_button.dart';
+import '../../../utils/dynamic.dart';
 import '../../../utils/global_colours.dart';
 import '../../../utils/text_form_global.dart';
 import '../../label_two.dart';
@@ -72,7 +75,7 @@ class CategoryOneView extends StatelessWidget {
               child : SingleChildScrollView(
                 child: Column(
                   children : [
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 10,),
                     LabelTwo( text: 'bread'),
                     const SizedBox(height: 15),
                     LabelTwo( text: 'milk and honey'),
@@ -122,7 +125,7 @@ class CategoryOneView extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 80,
+        height: Dimensions.height80,
         color: GlobalColor.blue,
         alignment: Alignment.center, // the text is not centered
         child: Row(
