@@ -79,6 +79,9 @@ class LoginView extends StatelessWidget {
                     text: 'Email',
                     obscure: false,
                     textInputType: TextInputType.emailAddress,
+                    //icon:,
+                    radius: 4,
+                    width: 339,
                   ),
                 ),
                 ////Email Input End
@@ -91,6 +94,8 @@ class LoginView extends StatelessWidget {
                     text: 'password',
                     textInputType: TextInputType.text,
                     obscure: true,
+                    radius: 4,
+                    width: 339,
                   ),
                 ),
                 ////password Input End

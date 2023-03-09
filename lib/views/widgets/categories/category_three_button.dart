@@ -10,7 +10,7 @@ class CategoryThreeButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryThreeView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) =>  CategoryThreeView()));
       },
       child: Container(
         alignment: Alignment.center,

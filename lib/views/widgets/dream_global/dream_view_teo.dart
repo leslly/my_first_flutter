@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_first_flutter/views/content_view.dart';
 import 'package:my_first_flutter/views/next_global_button.dart';
 import '../../../utils/global_colours.dart';
 import '../../../utils/text_form_global.dart';
@@ -27,7 +26,7 @@ class DreamViewTwo extends StatelessWidget {
             title: Container(
               margin: const EdgeInsets.only(top: 0, right: 0),
               child: Text(//container was here
-                'Pick your skills!!',
+                'Pick your skills!! 🌟',
                 style: TextStyle(
                     fontSize: 25,
                     fontFamily: 'Reem',
@@ -54,8 +53,9 @@ class DreamViewTwo extends StatelessWidget {
                       text: 'Search for skills',
                       textInputType: TextInputType.text,
                       obscure: false,
-                      a: 28,
-                      b: 328,
+                      radius: 28,
+                      width: 328,
+                      icon: Icons.search_rounded,
                     ),
                   ],
                 ),
@@ -128,58 +128,48 @@ class DreamViewTwo extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            TextButton(
-              onPressed: () {
+            NextButton(
+                next: () {
                 showCupertinoModalPopup<void>(
                   context: context,
                   builder: (BuildContext context) => CupertinoAlertDialog(
-                    content: const Text(
-                        'Proceed with Leslie mobile application on selected programs.', style:TextStyle(
-                       fontSize: 16,
-                    ),
-                    ),
-                    actions: <CupertinoDialogAction>[
-                      CupertinoDialogAction(
-                        isDefaultAction: true,
-                        textStyle: TextStyle(
-                          color: Colors.blue,
+                      content: const Text(
+                        'Are you satisfird with the skills you picked to build ', style:TextStyle(
+                        fontSize: 16,
+                      ),
+                      ),
+                      actions: <CupertinoDialogAction>[
+                        CupertinoDialogAction(
+                          isDefaultAction: true,
+                          textStyle: TextStyle(
+                            color: GlobalColor.black,
+                            fontFamily: 'Reem',
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: const Text('Yes'),
                         ),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        child: const Text('Cancel'),
-                      ),
-                      CupertinoDialogAction(
-                        isDestructiveAction: true,
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        child: const Text('Yes,Continue'),
-                      ),
-                    ],
-                  ),
-                );
-              },
-              child: Container(
-                alignment: Alignment.center,
-                width: 280,
-                height: 45,
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(20),
-                      topLeft: Radius.circular(20),
-                      bottomLeft: Radius.circular(20),
-                      bottomRight: Radius.circular(20),
+                        CupertinoDialogAction(
+                          isDestructiveAction: true,
+                          textStyle: TextStyle(
+                            color: GlobalColor.black,
+                            fontFamily: 'Reem',
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: const Text('No'),
+                        ),
+                      ],
                     ),
-                    color: Colors.black),
-                child: Text(
-                  "Next",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                ),
-              ),
+                  ); // showCupertinoModalPopup
+             },
+    //           if (CupertinoDialogAction.Text == 'No') {
+    // Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryOneView()));
+    // } else if (CupertinoDialogAction == 'Yes') {
+    //   ( Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryOneView())); || Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryTwoView())); || Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryThreeView())); )
+    // }
             ),
           ],
         ),
