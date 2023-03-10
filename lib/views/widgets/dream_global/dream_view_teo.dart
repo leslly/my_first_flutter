@@ -141,7 +141,7 @@ class DreamViewTwo extends StatelessWidget {
                     actions: <CupertinoDialogAction>[
                       CupertinoDialogAction(
                         isDefaultAction: true,
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                           color: Colors.blue,
                         ),
                         onPressed: () {
@@ -172,7 +172,7 @@ class DreamViewTwo extends StatelessWidget {
                       bottomRight: Radius.circular(20),
                     ),
                     color: Colors.black),
-                child: Text(
+                child: const Text(
                   "Next",
                   style: TextStyle(
                     color: Colors.white,
