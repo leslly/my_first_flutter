@@ -10,7 +10,7 @@ class CategoryTwoButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         //go to next page
-        Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryTwoView()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) =>  CategoryTwoView()));
       },
       child: Container(
         alignment: Alignment.center,
