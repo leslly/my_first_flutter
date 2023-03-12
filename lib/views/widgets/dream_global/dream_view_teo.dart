@@ -126,6 +126,7 @@ class DreamViewTwo extends StatelessWidget {
         color: GlobalColor.blue,
         alignment: Alignment.center, // the text is not centered
         child: Row(
+
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             NextButton(
