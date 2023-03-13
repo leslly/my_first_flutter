@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/utils/global_colours.dart';
 
 class TextFormGlobal extends StatelessWidget {
    const TextFormGlobal({Key? key,this.icon,required this.controller, required this.text, required this.textInputType, required this.obscure, this.radius = 100, this.width = 339,}) : super(key: key);
@@ -16,7 +17,7 @@ class TextFormGlobal extends StatelessWidget {
     return Container( // this is the container for the email
       height: 55,
       width: width,
-      padding: const EdgeInsets.only( left: 15),
+      padding: const EdgeInsets.only(top: 3, left: 15, bottom: 3),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(radius),
@@ -37,14 +38,11 @@ class TextFormGlobal extends StatelessWidget {
             hintText: text,
             border: InputBorder.none,
             contentPadding: const EdgeInsets.all(0),
-            hintStyle: const TextStyle(
+            hintStyle: TextStyle(
               height: 1,
-              color: Colors.black
+              color: GlobalColor.gray,
             ),
-          suffix:icon != null ? Icon(
-            icon,
-            color: Colors.grey,
-          ): null
+          suffix: icon != null ? Icon(icon, color: Colors.grey): null
           ),
         ),
       ),

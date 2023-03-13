@@ -58,6 +58,7 @@ class DreamView extends StatelessWidget {
                         obscure: false,
                         radius: 28,
                         width: 328,
+                        icon: Icons.search_rounded,
                       ),
                       const SizedBox(height: 30),
                       LabelTwo( text: 'bread'),
