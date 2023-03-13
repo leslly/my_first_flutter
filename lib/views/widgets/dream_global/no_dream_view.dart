@@ -22,6 +22,7 @@ class NoDreamView extends StatelessWidget {
             automaticallyImplyLeading: true,
             toolbarHeight: 70,
             title: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -46,6 +47,7 @@ class NoDreamView extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
                   'Take a pick!',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Reem',
                     fontSize: 24,

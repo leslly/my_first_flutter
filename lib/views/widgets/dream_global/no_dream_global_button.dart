@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_first_flutter/views/widgets/dream_global/no_dream_view.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 
+import '../../../utils/dynamic.dart';
+
 class NoDreamButton extends StatelessWidget {
   const NoDreamButton({Key? key}) : super(key: key);
 
@@ -13,9 +15,9 @@ class NoDreamButton extends StatelessWidget {
         Navigator.push(context, MaterialPageRoute(builder: (context) => const NoDreamView()));
       },
       child: Container(
+        height: Dimensions.height45*4,
+        width: Dimensions.width20*20,
         alignment: Alignment.center,
-        height: 173,
-        width: 353,
         decoration: BoxDecoration(
           color: GlobalColor.white,
           borderRadius: BorderRadius.circular(10),

@@ -24,6 +24,7 @@ class DreamViewTwo extends StatelessWidget {
             automaticallyImplyLeading: true,
             toolbarHeight: 150,
             title: Container(
+              alignment: Alignment.topLeft,
               margin: const EdgeInsets.only(top: 0, right: 0),
               child: Text(//container was here
                 'Pick your skills!! 🌟',

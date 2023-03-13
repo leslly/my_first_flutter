@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/utils/dynamic.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/views/widgets/dream_global/dream_view.dart';
 import 'package:my_first_flutter/views/widgets/dream_global/dream_view_teo.dart';
@@ -14,8 +15,8 @@ class DreamGlobalButton extends StatelessWidget {
      },
       child: Container(
         alignment: Alignment.center,
-        height: 173,
-        width: 353,
+        height: Dimensions.height45*4,
+        width: Dimensions.width20*20,
         decoration: BoxDecoration(
           color: GlobalColor.white,
           borderRadius: BorderRadius.circular(10),

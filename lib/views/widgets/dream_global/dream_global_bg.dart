@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/utils/dynamic.dart';
 import 'package:my_first_flutter/utils/global_colours.dart';
 import 'dream_global_button.dart';
 import 'no_dream_global_button.dart';
@@ -20,9 +21,11 @@ class DreamGlobalBg extends StatelessWidget {
             automaticallyImplyLeading: false,
             toolbarHeight: 150,
             title: Container(
+              alignment: Alignment.topLeft,
               margin: EdgeInsets.only(top: 0, right: 0),
               child: Text(//container was here
                 'Welcome User',
+                textAlign: TextAlign.start,
                 style: TextStyle(
                     fontSize: 25,
                     fontFamily: 'Reem',
@@ -59,7 +62,7 @@ class DreamGlobalBg extends StatelessWidget {
           ),
           SliverToBoxAdapter(
             child: Container(
-              height: 733,
+              height: Dimensions.height733,
               decoration: BoxDecoration(
                 color: GlobalColor.blue,
               ),
@@ -69,6 +72,7 @@ class DreamGlobalBg extends StatelessWidget {
                     height: 25,
                   ),
                   Container(
+                    width: 360,
                     decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
@@ -76,6 +80,7 @@ class DreamGlobalBg extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   Container(
+                    width: 360,
                     decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
