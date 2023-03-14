@@ -115,7 +115,7 @@ class CategoryOneView extends StatelessWidget {
                     const SizedBox(height: 15),
                     LabelTwo( text: 'milk and honey'),
                     const SizedBox(height: 15),
-                    LabelTwo( text: 'milk and honey'),
+                    LabelTwo( text: 'milk and honey bread and butter'),
                   ],
                 ),
               ),

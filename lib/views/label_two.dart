@@ -23,34 +23,37 @@ class _LabelTwoState extends State<LabelTwo> {
          // _colorOfButton ? Icons.clear_sharp : Icons.check_sharp;
         });
       },
-      child: Container(
-        padding: const EdgeInsets.only(left: 8.0, right: 8),
-        height: 32,
-        width: 100*2,
-         margin: const EdgeInsets.only(right: 200),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          color: _colorOfButton? Colors.white : Colors.black,
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              widget.text,
-              style: TextStyle(
-                fontFamily: 'Roboto',
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-                color: _colorOfButton? Colors.black : Colors.white
-              ),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.only(left: 8.0, right: 8),
+            height: 32,
+            //width: ,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              color: _colorOfButton? Colors.white : Colors.black,
             ),
-            const SizedBox(width: 10),
-            Icon(
-              _colorOfButton ? Icons.check_sharp : Icons.clear_sharp,
-                color: _colorOfButton? Colors.black : Colors.white,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  widget.text,
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                    color: _colorOfButton? Colors.black : Colors.white
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Icon(
+                  _colorOfButton ? Icons.check_sharp : Icons.clear_sharp,
+                    color: _colorOfButton? Colors.black : Colors.white,
+                ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

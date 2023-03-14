@@ -17,7 +17,7 @@ class TextFormGlobal extends StatelessWidget {
     return Container( // this is the container for the email
       height: 55,
       width: width,
-      padding: const EdgeInsets.only(top: 3, left: 15, bottom: 3),
+      padding: const EdgeInsets.only(top: 3, left: 15, bottom: 30, right: 15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(radius),

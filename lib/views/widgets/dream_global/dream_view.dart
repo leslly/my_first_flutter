@@ -3,8 +3,14 @@ import 'package:my_first_flutter/utils/text_form_global.dart';
 import 'package:my_first_flutter/views/label_two.dart';
 import '../../../utils/global_colours.dart';
 
-class DreamView extends StatelessWidget {
+class DreamView extends StatefulWidget {
    DreamView({Key? key}) : super(key: key);
+
+  @override
+  State<DreamView> createState() => _DreamViewState();
+}
+
+class _DreamViewState extends State<DreamView> {
   final TextEditingController searchController = TextEditingController();
 
   @override
@@ -61,7 +67,7 @@ class DreamView extends StatelessWidget {
                         icon: Icons.search_rounded,
                       ),
                       const SizedBox(height: 30),
-                      LabelTwo( text: 'bread'),
+                      LabelTwo( text: 'bread and butter make white people obesed '),
                       const SizedBox(height: 15),
                       LabelTwo( text: 'milk and honey'),
                       const SizedBox(height: 15),
