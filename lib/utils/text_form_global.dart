@@ -28,22 +28,20 @@ class TextFormGlobal extends StatelessWidget {
           ),
         ],
       ),
-      child: Center(
-        child: TextFormField( // the child inside the container holds the text field for the email
-          controller: controller,
-          keyboardType: textInputType,
-          obscureText: obscure,
+      child: TextFormField( // the child inside the container holds the text field for the email
+        controller: controller,
+        keyboardType: textInputType,
+        obscureText: obscure,
 
-          decoration: InputDecoration(
-            hintText: text,
-            border: InputBorder.none,
-            contentPadding: const EdgeInsets.all(0),
-            hintStyle: TextStyle(
-              height: 1,
-              color: GlobalColor.gray,
-            ),
-          suffix: icon != null ? Icon(icon, color: Colors.grey): null
+        decoration: InputDecoration(
+          hintText: text,
+          border: InputBorder.none,
+          contentPadding: const EdgeInsets.all(0),
+          hintStyle: TextStyle(
+            height: 1,
+            color: GlobalColor.gray,
           ),
+        suffixIcon: icon != null ? Icon(icon, color: Colors.grey): null,
         ),
       ),
     );
