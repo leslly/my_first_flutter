@@ -30,12 +30,6 @@ class SocialLogins extends StatelessWidget {
                   decoration: BoxDecoration(
                    // color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow:const [
-                     //  BoxShadow(
-                     //  color: Colors.black,
-                     //  blurRadius: 10,
-                     // ),
-                    ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/icons8-google.svg',
@@ -53,12 +47,6 @@ class SocialLogins extends StatelessWidget {
                   decoration: BoxDecoration(
                    // color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    // boxShadow:const [
-                    //   BoxShadow(
-                    //     color: Colors.black,
-                    //     blurRadius: 10,
-                    //   ),
-                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/icons8-github.svg',
@@ -76,12 +64,6 @@ class SocialLogins extends StatelessWidget {
                   decoration: BoxDecoration(
                     //color: GlobalColor.white,
                     borderRadius: BorderRadius.circular(6),
-                    // boxShadow:const [
-                    //   BoxShadow(
-                    //     color: Colors.black,
-                    //     blurRadius: 10,
-                    //   ),
-                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/icons8-linkedin-circled.svg',

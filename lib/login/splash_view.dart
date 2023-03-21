@@ -5,8 +5,8 @@ import 'package:my_first_flutter/utils/global_colours.dart';
 import 'package:my_first_flutter/login/login_view.dart';
 import 'package:get/route_manager.dart';
 
-class splashView extends StatelessWidget {
-  const splashView({Key? key}) : super(key: key);
+class SplashView extends StatelessWidget {
+  const SplashView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class splashView extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'c',
               style: TextStyle(
                 color: Colors.white,
@@ -38,7 +38,7 @@ class splashView extends StatelessWidget {
                 ),
               ),
             ),
-            Text(
+            const Text(
               'llSolution',
               style: TextStyle(
                 color: Colors.white,
@@ -52,28 +52,3 @@ class splashView extends StatelessWidget {
       );
   }
 }
-/*
-* hild: Row(
-          children: [
-            Text(
-              "Don't have an account ?",
-            ),
-            InkWell(
-              child: Text(
-                'Sign Up',
-                  style: TextStyle(
-                    color: GlobalColor.mainColor,
-                    fontSize: 16,
-                  ),
-              ),
-            ),
-          ],
-        ),
-        * Text(
-            'cellSolution',
-        style: TextStyle(
-            color: Colors.white,
-          fontSize: 50,
-          fontWeight: FontWeight.bold,
-        ),
-      ),*/
